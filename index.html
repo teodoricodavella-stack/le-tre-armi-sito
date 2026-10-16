@@ -39,6 +39,7 @@
     .btn-primary:hover{transform:translateY(-1px);filter:brightness(.96)}
     .btn-ghost{border-color:rgba(255,255,255,.5);color:white;background:transparent}
     .btn-light{border-color:var(--accent);color:var(--navy);background:transparent}
+    main[id], section[id]{scroll-margin-top:84px}
     .section{padding:84px 0}
     .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
     .section-head p{max-width:620px;color:var(--muted)}
@@ -88,6 +89,7 @@
     .leader{background:var(--cream)}
     .leader-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:58px;align-items:center}
     .portrait{aspect-ratio:4/3;border-radius:var(--radius);background:linear-gradient(135deg,#c8d1d9,#8b99a8);position:relative;box-shadow:var(--shadow)}
+    .projects .portrait:before{content:"FOTO PROGETTI"}
     .portrait:before{content:"FOTO TEODORICO";position:absolute;inset:0;display:grid;place-items:center;color:rgba(11,33,58,.35);letter-spacing:.16em;font-weight:900}
     .leader-copy p{color:#46525f;margin-top:18px}
     .quote{border-left:3px solid var(--accent);padding-left:20px;margin-top:26px;font-family:Georgia,'Times New Roman',serif;font-size:1.4rem;color:var(--navy);font-style:italic}
@@ -118,12 +120,14 @@
       .menu{display:none;position:absolute;left:20px;right:20px;top:70px;background:var(--cream);padding:18px;border-radius:16px;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start}
       .menu.open{display:flex}.hamb{display:block}.nav>.btn{display:none}
       .hero{min-height:640px}.hero-note{display:none}
+      .hero:after{display:none}
       .course-grid,.event-grid,.leader-grid,.life-grid,.projects-grid,.cta-grid{grid-template-columns:1fr}
       .section{padding:64px 0}.section-head{align-items:flex-start;flex-direction:column;margin-bottom:26px}
       .gallery{grid-template-columns:1fr}.gallery-side{grid-template-columns:1fr 1fr}
       .gallery .photo{min-height:270px}.gallery-side .photo{min-height:150px}
     }
     @media (max-width: 560px){
+      main[id], section[id]{scroll-margin-top:72px}
       .wrap{width:min(var(--max),calc(100% - 24px))}
       .nav{height:70px}.brand strong{font-size:.92rem}.brand{min-width:0}.brand-logo{width:50px;height:50px}
       .hero-inner{padding:92px 0 58px}.hero{min-height:590px}
@@ -138,7 +142,7 @@
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="Le Tre Armi Fencing Academy">
         <!-- Placeholder only: replace with the exact official PNG supplied by the club. Do not redraw or reinterpret the logo. -->
-        <div class="brand-logo" aria-hidden="true" style="width:64px;height:64px;border:1px dashed rgba(6,59,84,.35);border-radius:12px;display:grid;place-items:center;font-size:.55rem;letter-spacing:.08em;color:#66707c;text-align:center;line-height:1.2;padding:6px">LOGO<br>UFFICIALE</div>
+        <div class="brand-logo" aria-hidden="true" style="border:1px dashed rgba(6,59,84,.35);border-radius:12px;display:grid;place-items:center;font-size:.55rem;letter-spacing:.08em;color:#66707c;text-align:center;line-height:1.2;padding:6px">LOGO<br>UFFICIALE</div>
         <span><strong>LE TRE ARMI</strong><small>FENCING ACADEMY</small></span>
       </a>
       <nav class="menu" id="menu">
