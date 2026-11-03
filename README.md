@@ -20,8 +20,8 @@ Per un'iscrizione automatica completa occorre concordare un servizio di raccolta
 
 ## Dati da completare prima della pubblicazione
 
-- Orari settimanali dei corsi (gruppi confermati: Minions 4–8, Under 14 9–14, Over 14).
-- Quota, programma, disponibilità e condizioni del Camp, oppure conferma di pubblicare soltanto richieste di informazioni.
+- Giorni confermati: lunedì, mercoledì e venerdì. Per scelta del titolare non pubblicare orari precisi.
+- Quote, programma generale, staff e condizioni del Camp inseriti dai documenti organizzativi; i link pubblici dei moduli IT/EN restano da verificare.
 - Informativa privacy della società e dati legali del titolare, da verificare sull'hosting effettivo.
 - Eventuale calendario futuro del Trofeo Adriatico.
 - Eventuali foto reali autorizzate. I segnaposto fotografici sono stati rimossi, non sostituiti con immagini inventate.
@@ -39,3 +39,9 @@ node --test tests/site.test.cjs
 ```
 
 Prima di trasferire i file sull'hosting: verificare le pagine su desktop e mobile, inviare una richiesta reale autorizzata e verificarne la ricezione, completare privacy e dati legali, predisporre un backup del sito attuale. Configurare URL canonici e sitemap soltanto dopo la scelta dell'indirizzo definitivo e della struttura di pubblicazione. Non attivare pubblicazione automatica durante questa revisione.
+
+## Aggiornamento contenuti del 3 novembre 2026
+
+Fonti consultate: invito alle società del 3 novembre, calendario operativo aggiornato al 3 novembre e specifiche iscrizioni del 28 ottobre, nella cartella Drive Winter Fencing Camp 2026. Il calendario recente prevale sul vecchio dato di 20 posti: ora 28 posti letto, senza promessa di disponibilità in tempo reale. Le scadenze del calendario operativo non sono presentate come scadenze pubbliche di iscrizione. La formula dettagliata della gara non è pubblicata perché il calendario segnala che la struttura finale va ancora chiusa.
+
+Aggiunta sezione scherma storica con presentazione essenziale: nome specifico del nuovo progetto, referente, attività e requisiti restano da confermare. I materiali storici rinvenuti non sono stati trattati come descrizione del nuovo progetto. Non sono stati copiati dati di iscritti, coordinate bancarie o documenti interni nel repository.

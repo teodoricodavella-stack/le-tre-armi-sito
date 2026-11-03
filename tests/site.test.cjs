@@ -15,7 +15,7 @@ for (const file of pages) {
     const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
     assert.equal(ids.length, new Set(ids).size, 'duplicate id');
     for (const [, value] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
-      if (/^(?:https?:|mailto:)/.test(value)) continue;
+      if (/^(?:https?:|mailto:|tel:)/.test(value)) continue;
       const [target, anchor] = value.split('#');
       const dest = path.join(root, target || file);
       assert.ok(fs.existsSync(dest), `${value} missing from ${file}`);

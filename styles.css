@@ -175,3 +175,7 @@ textarea{resize:vertical;min-height:130px}.field small{color:#46525f}
 @media(max-width:560px){.hero{min-height:auto}.hero-inner{padding:64px 0}.page-hero{padding:48px 0}.form-panel{padding:22px}.section{padding:48px 0}.event-card{min-height:280px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 @media(max-width:900px){html:not(.js) .nav{height:auto;flex-wrap:wrap;padding:12px 0}html:not(.js) .menu{position:static;display:flex;width:100%;box-shadow:none}html:not(.js) .hamb{display:none}}
+
+.history{background:#e8f0f4}.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}.history p{margin-bottom:20px;color:#334b5b}.history .btn{margin-top:6px}.camp-details h3{margin:32px 0 14px}.camp-details p{margin:12px 0}.camp-details a{text-decoration:underline;text-underline-offset:3px}.price-list{margin:20px 0}.price-list div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}.price-list dd{font-weight:800;white-space:nowrap;margin:0}.camp-details ul{padding-left:22px}.camp-details li{margin:10px 0}
+@media(min-width:901px) and (max-width:1200px){.nav>.btn{display:none}}
+@media(max-width:900px){.history-grid{grid-template-columns:1fr;gap:24px}}
