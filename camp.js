@@ -20,7 +20,7 @@ form?.addEventListener('submit', event => {
     ...(clean(data.get('club')) ? [`Società schermistica: ${clean(data.get('club'))}`] : []),
     ...(clean(data.get('weapon')) ? [`Arma: ${clean(data.get('weapon'))}`] : []),
     '',
-    clean(data.get('message')) || 'Vorrei ricevere il modulo di iscrizione e verificare la disponibilità.',
+    clean(data.get('message')) || 'Vorrei informazioni sul Camp e verificare la disponibilità.',
     '',
     'Resto in attesa delle informazioni e della conferma della società. Grazie.'
   ].join('\n');
