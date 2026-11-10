@@ -3,7 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Le Tre Armi Fencing Academy</title>
+  <title>Le Tre Armi Fencing Academy | Scherma a Trani</title>
+  <link rel="icon" type="image/png" href="logo_le_tre_armi_scontornato.png" />
+  <link rel="apple-touch-icon" href="logo_le_tre_armi_scontornato.png" />
+  <meta name="theme-color" content="#063b54" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Le Tre Armi Fencing Academy | Scherma a Trani" />
+  <meta property="og:description" content="Scherma a Trani per bambini, ragazzi e adulti: corsi, allenamenti, Trofeo Adriatico e Winter Fencing Camp." />
   <meta name="description" content="Le Tre Armi Fencing Academy a Trani. Scherma per bambini, ragazzi e adulti: dall'avviamento all'agonismo." />
   <style>
     :root{
@@ -150,7 +156,7 @@
         <a href="#corsi">Corsi</a><a href="#eventi">Eventi</a><a href="#chi-siamo">Chi sono</a><a href="#progetti">Progetti</a><a href="#contatti">Contatti</a>
       </nav>
       <a class="btn btn-primary" href="#contatti">Prenota una prova</a>
-      <button class="hamb" id="hamb" aria-label="Apri menu">☰</button>
+      <button class="hamb" id="hamb" type="button" aria-label="Apri menu" aria-controls="menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
@@ -180,12 +186,12 @@
       <div class="wrap">
         <div class="section-head"><div><span class="eyebrow">Esperienze</span><h2>Oltre l’allenamento</h2><div class="gold-line"></div></div><p>Competizione, formazione e condivisione: occasioni per vivere la scherma anche fuori dalla normale routine della palestra.</p></div>
         <div class="event-grid">
-          <article class="event-card"><div class="event-copy"><h3>Trofeo Adriatico</h3><p>Un circuito per confrontarsi, crescere attraverso la competizione e fare esperienza in un ambiente serio ma aperto.</p></div></article>
-          <article class="event-card"><div class="event-copy"><h3>Winter Fencing Camp</h3><p>Più giorni immersi nella scherma, tra tecnica, preparazione fisica, assalti e momenti di gruppo.</p></div></article>
+          <article class="event-card"><div class="event-copy"><h3>Trofeo Adriatico</h3><p><strong>Prima tappa: 29 novembre 2026 · Trani.</strong> Un circuito per confrontarsi, crescere attraverso la competizione e fare esperienza in un ambiente serio ma aperto.</p><a class="btn btn-primary" style="margin-top:18px" href="https://buytickets.at/ssdletrearmifencingacademy/2521561" target="_blank" rel="noopener noreferrer">Iscriviti alla prima tappa ↗</a></div></article>
+          <article class="event-card"><div class="event-copy"><h3>Winter Fencing Camp</h3><p><strong>27–30 dicembre 2026 · Trani.</strong> Più giorni immersi nella scherma, tra tecnica, preparazione fisica, assalti e momenti di gruppo.</p><a class="btn btn-ghost" style="margin-top:18px" href="mailto:info@letrearmi.it?subject=Informazioni%20Winter%20Fencing%20Camp%202026">Richiedi informazioni ↗</a></div></article>
         </div>
         <div class="event-checkout">
-          <a class="btn btn-primary" href="https://www.tickettailor.com/events/ssdletrearmifencingacademy" target="_blank" rel="noopener noreferrer" aria-label="Apri le iscrizioni agli eventi Le Tre Armi su Ticket Tailor in una nuova scheda">Iscriviti agli eventi ↗</a>
-          <p>Iscriviti agli eventi pubblicati e scegli, quando disponibile, il pagamento con carta oppure le modalità alternative indicate dall'organizzazione. Gli eventi compaiono in biglietteria quando vengono aperte le iscrizioni.</p>
+          <a class="btn btn-primary" href="https://buytickets.at/ssdletrearmifencingacademy/2521561" target="_blank" rel="noopener noreferrer" aria-label="Apri le iscrizioni alla prima tappa del Trofeo Adriatico del 29 novembre 2026">Iscrizioni Trofeo Adriatico ↗</a>
+          <p>Prima tappa del 29 novembre 2026: apri la pagina dedicata su Ticket Tailor per consultare le modalità di iscrizione e pagamento.</p>
         </div>
       </div>
     </section>
@@ -222,8 +228,8 @@
   <footer><div class="wrap">© 2026 Le Tre Armi Fencing Academy · Trani</div></footer>
   <script>
     const hamb=document.getElementById('hamb'), menu=document.getElementById('menu');
-    hamb?.addEventListener('click',()=>menu.classList.toggle('open'));
-    menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+    hamb?.addEventListener('click',()=>{const open=menu.classList.toggle('open');hamb.setAttribute('aria-expanded',String(open));hamb.setAttribute('aria-label',open?'Chiudi menu':'Apri menu');});
+    menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');hamb?.setAttribute('aria-expanded','false');hamb?.setAttribute('aria-label','Apri menu');}));
   </script>
 </body>
 </html>
