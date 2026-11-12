@@ -107,6 +107,9 @@
     .portrait{aspect-ratio:4/3;border-radius:var(--radius);background:linear-gradient(135deg,#c8d1d9,#8b99a8);position:relative;box-shadow:var(--shadow)}
     .projects .portrait:before{content:"FOTO PROGETTI"}
     .portrait:before{content:"FOTO TEODORICO";position:absolute;inset:0;display:grid;place-items:center;color:rgba(11,33,58,.35);letter-spacing:.16em;font-weight:900}
+    .portrait-maestro{aspect-ratio:4/5;overflow:hidden}
+    .portrait-maestro:before{display:none}
+    .portrait-maestro img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}
     .leader-copy p{color:#46525f;margin-top:18px}
     .quote{border-left:3px solid var(--accent);padding-left:20px;margin-top:26px;font-family:Georgia,'Times New Roman',serif;font-size:1.4rem;color:var(--navy);font-style:italic}
 
@@ -206,7 +209,7 @@
 
     <section class="section leader" id="chi-siamo">
       <div class="wrap leader-grid">
-        <div class="portrait"></div>
+        <div class="portrait portrait-maestro"><img src="teo-in-piastrone.webp" alt="Il maestro federale Teodorico D’Avella con il piastrone blu e le braccia conserte" width="1122" height="1402" loading="lazy" decoding="async"></div>
         <div class="leader-copy"><span class="eyebrow">Chi guida Le Tre Armi</span><h2>Teodorico D’Avella</h2><p><strong>Fondatore e Maestro Federale.</strong> Le Tre Armi nasce nel 2021 dalla volontà di riportare sul territorio l’esperienza maturata attraverso anni di formazione e lavoro in diverse realtà schermistiche italiane.</p><p>L’obiettivo è costruire un ambiente in cui qualità tecnica, attenzione alla persona e senso di appartenenza possano crescere insieme.</p><div class="quote">“Prima ancora del risultato viene la costruzione dell’atleta e della persona.”</div></div>
       </div>
     </section>
