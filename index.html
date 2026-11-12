@@ -77,6 +77,7 @@
     .course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
     .card{background:white;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
     .photo{height:210px;background:linear-gradient(135deg,#d7d9dc,#aeb7c1);position:relative;overflow:hidden}
+    .course-cover{display:block;width:100%;height:210px;object-fit:cover}
     .photo:before{content:"FOTO";position:absolute;inset:0;display:grid;place-items:center;font-weight:900;letter-spacing:.18em;color:rgba(11,33,58,.35)}
     .card-body{padding:24px}
     .meta{color:var(--accent);font-weight:800;margin:.35rem 0 .7rem}
@@ -182,7 +183,7 @@
       <div class="wrap">
         <div class="section-head"><div><span class="eyebrow">Percorsi</span><h2>I nostri corsi</h2><div class="gold-line"></div></div><p>Il percorso cresce insieme all’atleta: gioco e coordinazione nei primi anni, poi tecnica, preparazione fisica e possibilità di vivere anche l’esperienza agonistica.</p></div>
         <div class="course-grid">
-          <article class="card"><div class="photo"></div><div class="card-body"><h3>Minions</h3><div class="meta">4–8 anni</div><p>Gioco-scherma, movimento e coordinazione per costruire le basi motorie e conoscere il proprio corpo.</p></div></article>
+          <article class="card"><img class="course-cover" src="le-tre-armi-corso-minions-copertina.webp" alt="" loading="lazy" /><div class="card-body"><h3>Minions</h3><div class="meta">4–8 anni</div><p>Gioco-scherma, movimento e coordinazione per costruire le basi motorie e conoscere il proprio corpo.</p></div></article>
           <article class="card"><div class="photo"></div><div class="card-body"><h3>Under 14</h3><div class="meta">Dai 9 ai 14 anni</div><p>Lavoro tecnico, lezioni individuali e preparazione fisica adeguata all’età, con la possibilità di iniziare il percorso agonistico.</p></div></article>
           <article class="card"><div class="photo"></div><div class="card-body"><h3>Over 14</h3><div class="meta">Cadetti · Giovani · Assoluti · Master</div><p>Tecnica, preparazione atletica e lavoro compensativo in un percorso completo, con gare facoltative.</p></div></article>
         </div>
